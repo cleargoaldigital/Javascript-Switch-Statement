@@ -54,3 +54,18 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
 (condition) ? run this code : run this code instead */
 
 let studentName = (Taofeek) ? 'Yes, he\'s my student.' : 'No, he isn\'t my student.'
+
+
+
+const select = document.querySelector('.bgcolor');
+const html = document.querySelector('html');
+document.body.style.padding = '20px';
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+select.onchange = function() {
+  ( select.value === 'green' ) ? update('green', 'blue') : update('blue','green');
+};
