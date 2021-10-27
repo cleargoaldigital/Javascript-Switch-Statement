@@ -57,13 +57,13 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
 // let studentName = (Taofeek) ? 'Yes, he\'s my student.' : 'No, he isn\'t my student.';
 // console.log(studentName);
 
-  let studentName = (Taofeek) ? 'Yes, he\'s my student.': 'No, he isn\'t my student.'
+//   let studentName = (Taofeek) ? 'Yes, he\'s my student.': 'No, he isn\'t my student.'
 
 
 
-  const weatherForecast = document.querySelector('.colortheme');
+  const weatherForecast = document.querySelector('.weathertheme');
   const html = document.querySelector('html');
-  document.body.style.padding = '20px';
+  document.body.style.padding = '10px';
 
   function update(bgColor, textColor) {
     html.style.backgroundColor = bgColor;
@@ -71,5 +71,5 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
   }
 
   weatherForecast.onchange = function() {
-    (weatherForecast.value === 'yellow' ) ? update('yellow', 'blue'): update('blue', 'yellow');
+    (weatherForecast.value === 'black') ? update('black', 'white'): update('white', 'black');
   }
