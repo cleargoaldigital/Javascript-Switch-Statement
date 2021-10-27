@@ -53,4 +53,6 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
 
 (condition) ? run this code : run this code instead */
 
-let studentName = (Taofeek) ? 'Yes, he\'s my student.' : 'No, he isn\'t my student.'
+// let studentName = (Taofeek) ? 'Yes, he\'s my student.' : 'No, he isn\'t my student.';
+// console.log(studentName);
+
