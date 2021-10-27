@@ -53,16 +53,15 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
 
 (condition) ? run this code : run this code instead */
 
-<<<<<<< HEAD
+
 // let studentName = (Taofeek) ? 'Yes, he\'s my student.' : 'No, he isn\'t my student.';
 // console.log(studentName);
 
-=======
   let studentName = (Taofeek) ? 'Yes, he\'s my student.': 'No, he isn\'t my student.'
 
 
 
-  const select = document.querySelector('.bgcolor');
+  const weatherForecast = document.querySelector('.colortheme');
   const html = document.querySelector('html');
   document.body.style.padding = '20px';
 
@@ -71,7 +70,6 @@ It is most useful in the instance of YES/NO. Its pseudocode is written as follow
     html.style.color = textColor;
   }
 
-  select.onchange = function() {
-    (select.value === 'green') ? update('green', 'blue'): update('blue', 'green');
-  };
->>>>>>> dcf9b9581f99e8c4aa9d1dad0d694064c4dcce26
+  weatherForecast.onchange = function() {
+    (weatherForecast.value === 'yellow' ) ? update('yellow', 'blue'): update('blue', 'yellow');
+  }
